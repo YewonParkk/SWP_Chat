@@ -91,4 +91,4 @@ if __name__ == '__main__':
     with application.app_context():
         db.create_all()
     # 앱 실행
-    application.run(debug=True, port=5002)
+    application.run(debug=True, host='0.0.0.0', port=5002)

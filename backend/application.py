@@ -81,7 +81,7 @@ def protected_route():
     return jsonify(message="This is a protected route!")
 
 # 메인 페이지
-@application.route('/')
+@application.route('/test')
 def index():
     return "Welcome to my Flask App!"
 

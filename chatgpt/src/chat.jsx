@@ -16,7 +16,7 @@ const Chat = () => {
   // 사용자 입력을 저장하는 상태를 초기화합니다.
   const [input, setInput] = useState("");
 
-  const apiKey = "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"; // OpenAI API 키
+  const apiKey = "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"; // OpenAI API 키
   const [isSending, setIsSending] = useState(false); // 메시지 전송 중 여부를 추적할 상태
 
   const chatContentRef = useRef(null); // 채팅 창의 DOM 요소를 참조하기 위한 ref
@@ -24,7 +24,7 @@ const Chat = () => {
   // 토큰이 있다면 저장된 채팅을 불러옵니다.
   useEffect(() => {
     if (localStorage.getItem('token')) {
-        fetch('http://http://13.209.84.48:5002/get_chats', {
+        fetch('http://13.209.84.48:5002/get_chats', {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}`
             }
@@ -171,7 +171,7 @@ const Chat = () => {
   // 토큰이 있다면 저장된 채팅을 불러옵니다.
   useEffect(() => {
     if (localStorage.getItem('token')) {
-        fetch('http://http://13.209.84.48:5002/get_chats', {
+        fetch('http://13.209.84.48:5002/get_chats', {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}`
             }

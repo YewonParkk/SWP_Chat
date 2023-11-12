@@ -27,7 +27,7 @@ const Login = () => {
   };
 
   const handleLogin = () => {
-    fetch('http://http://13.209.84.48:5002/login', {
+    fetch('http://13.209.84.48:5002/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ const Login = () => {
   };
 
   const handleRegister = () => {
-    fetch('http://http://13.209.84.48:5002/register', {
+    fetch('http://13.209.84.48:5002/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

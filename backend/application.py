@@ -9,7 +9,7 @@ application = Flask(__name__)
 # CORS 설정
 CORS(application)
 # 데이터베이스 설정
-application.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+application.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///home/ubuntu/SWP/backend/instance/database.db'
 # JWT 비밀 키 설정
 application.config['JWT_SECRET_KEY'] = secrets.token_hex(16)
 
